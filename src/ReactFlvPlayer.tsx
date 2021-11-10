@@ -2,15 +2,15 @@ import { FC, Fragment, useEffect, useRef } from "react";
 import flv from "flv.js";
 
 export interface ReactFlvPlayerProps {
-  isLive: boolean;
-  hasAudio: boolean;
-  hasVideo: boolean;
-  showControls: boolean;
-  enableStashBuffer: boolean;
-  stashInitialSize: number | undefined;
-  height: number;
-  width: number;
-  isMuted: false;
+  isLive?: boolean;
+  hasAudio?: boolean;
+  hasVideo?: boolean;
+  showControls?: boolean;
+  enableStashBuffer?: boolean;
+  stashInitialSize?: number | undefined;
+  height?: number;
+  width?: number;
+  isMuted?: false;
   url: string;
 }
 

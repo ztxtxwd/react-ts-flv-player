@@ -1,6 +1,6 @@
 {
   "name": "@asurraa/react-ts-flv-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React Component to play flv video also support Typescript",
   "keywords": [
     "react",
