@@ -1,5 +1,5 @@
 
-![npm package](https://img.shields.io/npm/v/@asuraa/react-ts-flv-player.svg?style=flat-square?style=flat-square)
+![npm package](https://img.shields.io/npm/v/@asurraa/react-ts-flv-player.svg?style=flat-square?style=flat-square)
 
 # React TS FLV Player
 
