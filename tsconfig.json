@@ -1,37 +1,27 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "baseUrl": ".",
-    "outDir": "dist",
     "module": "esnext",
-    "target": "es2017",
-    "lib": ["es6", "dom", "esnext.asynciterable", "es2017"],
-    "sourceMap": true,
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "strict": true,
+    "lib": ["dom", "esnext"],
+    "target": "ESNext",
     "moduleResolution": "node",
-    "rootDir": "./",
-    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
+    "allowJs": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "skipLibCheck": true,
+    "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
-    "removeComments": true,
-    "esModuleInterop": true
+    "isolatedModules": false,
+    "baseUrl": "./",
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "noLib": false
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
-  ],
-  "include": ["./src/**/*ts", "./src/**/*tsx"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
