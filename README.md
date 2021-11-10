@@ -1,6 +1,16 @@
-<h1 align="center">react-ts-flv-player</h1>
+
+![npm package](https://img.shields.io/npm/v/@asuraa/react-ts-flv-player.svg?style=flat-square?style=flat-square)
+
+# React TS FLV Player
+
 A React component to play flv streaming video also support typescript.
 
-### Installation
+```sh
+yarn add @asurraa/react-ts-flv-player
 
-`yarn add @asurraa/react-ts-flv-player`
+```
+
+
+## License
+
+MIT
