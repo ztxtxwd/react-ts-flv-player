@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asurraa/react-ts-flv-player@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@asurraa/react-ts-flv-player/-/react-ts-flv-player-1.0.6.tgz#6ea8369f6121617038ea15b9308ad36c2dc1903e"
-  integrity sha512-kKn5NsPyV1vRHEsgVe86GZ79UG7E/bGKwmUxNH+3dg6fMM81TMsmApogJ/jMgsqiiHTh4VOdAsIu0IwUCvTlIw==
+"@asurraa/react-ts-flv-player@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@asurraa/react-ts-flv-player/-/react-ts-flv-player-1.0.10.tgz#203012a9eeffd82852e04b56784b0668f9dd51c5"
+  integrity sha512-nS7d16RqpheJRUIWaU++wHKFnjtuQfG323ksCJMS1Cm3PhEQl6QLQk8++XXI4naktPCLgugHQfB/QjKLNl1JGw==
   dependencies:
     flv.js "^1.6.2"
     react "^17.0.2"

@@ -12,7 +12,7 @@ export interface ReactFlvPlayerProps {
   width?: number;
   isMuted?: false;
   url: string;
-  videoProps: React.DetailedHTMLProps<
+  videoProps?: React.DetailedHTMLProps<
     React.VideoHTMLAttributes<HTMLVideoElement>,
     HTMLVideoElement
   >;
