@@ -18,7 +18,7 @@ export interface ReactFlvPlayerProps {
   >;
   flvMediaSourceOptions?: flv.MediaDataSource;
   flvConfig?: flv.Config;
-  errorCallback?: (err: any) => void;
+  // errorCallback?: (err: any) => void;
 }
 
 export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
@@ -57,9 +57,9 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
     player.attachMediaElement(videoRef.current!);
     player.load();
     player.play();
-    player.on("error", (err) => {
-      props.errorCallback?.(err);
-    });
+    // player.on("error", (err) => {
+    //   props.errorCallback?.(err);
+    // });
   }, []);
 
   return (
