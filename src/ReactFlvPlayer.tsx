@@ -74,3 +74,5 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
     </Fragment>
   );
 };
+
+export default ReactFlvPlayer;
