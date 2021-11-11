@@ -12,6 +12,13 @@ export interface ReactFlvPlayerProps {
   width?: number;
   isMuted?: false;
   url: string;
+  videoProps: React.DetailedHTMLProps<
+    React.VideoHTMLAttributes<HTMLVideoElement>,
+    HTMLVideoElement
+  >;
+  flvMediaSourceOptions?: flv.MediaDataSource;
+  flvConfig?: flv.Config;
+  errorCallback?: (err: any) => void;
 }
 
 export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
@@ -38,10 +45,12 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
         hasAudio: hasAudio,
         hasVideo: hasVideo,
         url: url,
+        ...props.flvMediaSourceOptions,
       },
       {
         stashInitialSize: stashInitialSize,
         enableStashBuffer: enableStashBuffer,
+        ...props.flvConfig,
       }
     );
 
@@ -49,7 +58,7 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
     player.load();
     player.play();
     player.on("error", (err) => {
-      console.error(err);
+      props.errorCallback?.(err);
     });
   }, []);
 
@@ -60,6 +69,7 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
         muted={isMuted}
         ref={videoRef}
         style={{ height, width }}
+        {...props.videoProps}
       />
     </Fragment>
   );
