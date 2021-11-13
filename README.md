@@ -14,7 +14,7 @@ yarn add @asurraa/react-ts-flv-player
 import { Fragment } from "react";
 import { ReactFlvPlayer } from "@asurraa/react-ts-flv-player";
 const LiveDashboardPage = () => {
-  const url = "https://monitoring.gamebetting.asurraa.dev/live123/123.flv";
+  const url = "https://xxx.flv";
   return (
     <Fragment>
       <ReactFlvPlayer
