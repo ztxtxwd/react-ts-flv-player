@@ -32,6 +32,19 @@ export default LiveDashboardPage;
 
 ```
 
+## Use with NextJS with SSR disable 
+```tsx
+// create wrapper components 
+import dynamic from "next/dynamic";
+export const FlvNextPlayer = dynamic(
+  () => import("@asurraa/react-ts-flv-player/dist/NextReactFlvPlayer"),
+  {
+    ssr: false,
+  }
+);
+
+```
+
 ## License
 
 MIT
