@@ -12,6 +12,7 @@ export interface ReactFlvPlayerProps {
   width?: number;
   isMuted?: false;
   url: string;
+  classNames?: string;
   videoProps?: React.DetailedHTMLProps<
     React.VideoHTMLAttributes<HTMLVideoElement>,
     HTMLVideoElement
@@ -33,6 +34,7 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
     stashInitialSize,
     isMuted,
     url,
+    classNames,
   } = props;
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -69,6 +71,7 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
         muted={isMuted}
         ref={videoRef}
         style={{ height, width }}
+        className={classNames}
         {...props.videoProps}
       />
     </Fragment>
