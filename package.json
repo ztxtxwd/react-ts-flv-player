@@ -1,6 +1,6 @@
 {
-  "name": "@asurraa/react-ts-flv-player",
-  "version": "1.0.14",
+  "name": "@ztxtxwd/react-ts-flv-player",
+  "version": "1.1.8",
   "description": "A React Component to play flv video also support Typescript",
   "keywords": [
     "react",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asurraa/react-ts-flv-player"
+    "url": "https://github.com/ztxtxwd/react-ts-flv-player"
   },
-  "author": "chhenlyhour@asurraa.com",
+  "author": "ztx4215@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/asurraa/react-ts-flv-player/issues"
+    "url": "https://github.com/ztxtxwd/react-ts-flv-player/issues"
   },
-  "homepage": "https://github.com/asurraa/react-ts-flv-player#readme",
+  "homepage": "https://github.com/ztxtxwd/react-ts-flv-player#readme",
   "dependencies": {
     "babel-loader": "^8.2.3",
     "flv.js": "^1.6.2",

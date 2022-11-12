@@ -10,7 +10,7 @@ export interface ReactFlvPlayerProps {
   stashInitialSize?: number | undefined;
   height?: number;
   width?: number;
-  isMuted?: false;
+  isMuted?: boolean;
   url: string;
   classNames?: string;
   videoProps?: React.DetailedHTMLProps<
@@ -55,10 +55,10 @@ export const ReactFlvPlayer: FC<ReactFlvPlayerProps> = (props) => {
         ...props.flvConfig,
       }
     );
-
     player.attachMediaElement(videoRef.current!);
     player.load();
     player.play();
+
     // player.on("error", (err) => {
     //   props.errorCallback?.(err);
     // });
